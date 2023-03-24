@@ -26,7 +26,6 @@ client.on("loggedOn", () => {
   console.log("Logged into Steam successfully.");
   client.setPersona(SteamUser.EPersonaState.Online);
   client.gamesPlayed([730]);
-  sendNotification();
 });
 
 client.on("error", (err) => {
